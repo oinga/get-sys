@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>System Stats for "{{node_name}}""</h2>
+<p style="text-align: center;">======================================== System Information ========================================</p>
+<table>
+  <tr>
+    <th>System</th>
+    <th>PC Name</th>
+    <th>Release</th>
+    <th>Version</th>
+    <th>Machine</th>
+    <th>Processor</th>
+  </tr>
+  <tr>
+    <td>{{system}}</td>
+    <td>{{node_name}}</td>
+    <td>{{release}}</td>
+    <td>{{version}}</td>
+    <td>{{machine}}</td>
+    <td>{{processor}}</td>
+  </tr>
+</table>
+<p style="text-align: center;">======================================== Boot Time ========================================</p>
+<table>
+  <tr>
+    <th>Boot Time</th>
+  </tr>
+  <tr>
+    <td>{{boot_time}}</td>
+  </tr>
+</table>
+<p style="text-align: center;">======================================== CPU Information ========================================</p>
+<table>
+  <tr>
+    <th>Physical Cores</th>
+    <td>Total Cores</td>
+    <td>CPU Min</td>
+    <td>CPU Max</td>
+    <td>CPU Current</td>
+    <td>Total CPU Usage</td>
+  </tr>
+  <tr>
+    <td>{{physical_cores}}</td>
+    <td>{{total_cores}}</td>
+    <td>{{cpu_min}}</td>
+    <td>{{cpu_max}}</td>
+    <td>{{cpu_current}}</td>
+    <td>{{cpu_usage}}</td>
+  </tr>
+</table>
+<p style="text-align: center;">======================================== Memory Usage ========================================</p>
+<table>
+  <tr>
+    <td>Total Memory</td>
+  </tr>
+  <tr>
+
+    <td>{{total_memory}}</td>
+  </tr>
+</table>
+</body>
+</html>
